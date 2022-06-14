@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.container {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background: #c3c3c3;
+	padding: 0;
+	margin: 0;
+}
+header h1 {
+	width: 150px;
+	height: 60px;
+	background: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+header h1 a {
+	color: #000;
+	font-weight: 400;
+	font-size: 24px;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	width: 150px;
+	height: 60px;
+	background: #aaa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+nav ul li a {
+	color: #f5f5f5;
+}
+nav ul li .subMenu {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	z-index: 10;
+}
+nav ul li .subMenu ul {
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li .subMenu ul li {
+	background-color: #bbb;
+}
+nav ul li:hover {
+	background: #ccc;
+}
+nav ul li:hover .subMenu {
+	display: block;
+}
+nav ul li .subMenu ul li:hover {
+	background: #ccc;
+}
+
+.hamberger {
+	width: 60px;
+	height: 60px;
+	background: #d9d9d9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 46px;
+	cursor: pointer;
+}
+.hamberger span {
+	display: block;
+	width: 30px;
+	border: 2px solid #000;
+	margin-bottom: 10px;
+}
+
+.hamberger span:last-child {
+	margin: 0;
+}
+
+.slider {
+	background: #f5f5f5;
+	height: 460px;
+	display: flex;
+	justify-content: center;
+}
+.slider .sliderView {
+	position: relative;
+	width: 100vw;
+	height: 100%;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	width: calc(100vw * 3);
+	height: 100%;
+	position: absolute;
+}
+.slider ul li {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.slider ul li:first-child {
+	background: url('./imges/jeju-island-g279d5c3d3_1920.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.slider ul li:nth-child(2) {
+	background: url('./imges/jeju-g33429da2c_1920.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-size: cover;
+}
+.slider ul li:last-child {
+	background: url('./imges/stone-day-bag-g873d2422a_1920.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-size: cover;
+}
+
+.slider .btnBox div {
+	width: 50px;
+	height: 50px;
+	background: url('./imges/Group\ 12.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.slider .btnBox div:first-child {
+	position: absolute;
+	top: 50%;
+	left: 6%;
+}
+.slider .btnBox div:last-child {
+	background: url('./imges/Group\ 3.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	right: 6%;
+}
+
+.contents {
+	width: 100%;
+	padding: 100px;
+}
+
+.contents ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.contents ul li {
+	width: 250px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.contents ul li:nth-child(2) {
+	margin: 0 30px;
+}
+.contents ul li img {
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.5s;
+}
+
+.contents ul li:hover img {
+	transform: scale(1.5, 1.5);
+	transition-duration: 0.5s;
+}
