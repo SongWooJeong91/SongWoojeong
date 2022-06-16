@@ -5,6 +5,7 @@
 .container {
 	margin: 0;
 	padding: 0;
+	background: #d9d9d9;
 }
 
 header {
@@ -181,4 +182,15 @@ nav ul li .subMenu ul li:hover {
 .contents ul li:hover img {
 	transform: scale(1.5, 1.5);
 	transition-duration: 0.5s;
+}
+
+.container .topBtn {
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	position: fixed;
+	bottom: 43px;
+	right: 40px;
+	border-radius: 50%;
+	cursor: pointer;
 }
